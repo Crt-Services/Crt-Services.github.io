@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Header Test</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: transparent;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            height: 50px;
+            opacity: 0;
+            transition: background-color 0.3s ease, opacity 0.3s ease;
+        }
+
+        .hero {
+            height: 500px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <header id="mainHeader">
+        Header Content
+    </header>
+
+    <div class="hero">
+        Hero Section
+    </div>
+
+    <script>
+        const header = document.getElementById("mainHeader");
+        const heroHeight = document.querySelector(".hero").offsetHeight;
+
+        function updateHeaderVisibility() {
+            if (window.pageYOffset > heroHeight) {
+                header.style.backgroundColor = "white";
+                header.style.opacity = 1;
+            } else {
+                header.style.backgroundColor = "transparent";
+                header.style.opacity = 0;
+            }
+        }
+
+        updateHeaderVisibility();
+        window.addEventListener("scroll", updateHeaderVisibility);
+    </script>
+</body>
+</html>

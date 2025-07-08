@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Gas Certification</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#">
+                    <img src="logo.png" alt="Your Company Logo">
+                </a>
+            </div>
+            <button class="menu-btn">&#9776;</button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="dropdown">
+                        <a href="training1.html">Flow-x</a>
+                        <div class="dropdown-content">
+                            <a href="training1.html">Flow-x Class 1</a>
+                            <a href="training1.html">Flow-x Class 2</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="training2.html">Omni</a>
+                        <div class="dropdown-content">
+                            <a href="training2.html">Omni Class 1</a>
+                            <a href="training2.html">Omni Class 2</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="training3.html">CRT</a>
+                        <div class="dropdown-content">
+                            <a href="training3.html">CRT Class 1</a>
+                            <a href="training3.html">CRT Class 2</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="training4.html">Other</a>
+                        <div class="dropdown-content">
+                            <a href="training4.html">Other Class 1</a>
+                            <a href="training4.html">Other Class 2</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero" style="background-image: url('photo-1580582932707-520aed937b7b.jpg');">
+        <div class="container">
+            <h1>Expert Gas Certification Services</h1>
+            <p>Your trusted partner for all gas certification needs.</p>
+        </div>
+    </section>
+
+    <section class="our-classes">
+        <div class="container">
+            <h2>Our Trainings</h2>
+            <div class="classes-container">
+                <div class="class-category" style="background-image: url('flow-x-bg.jpg');">
+                    <h3>Flow-x</h3>
+                    <ul>
+                        <li><a href="flow-x-class-1.html">Flow-x Class 1</a></li>
+                        <li><a href="flow-x-class-2.html">Flow-x Class 2</a></li>
+                    </ul>
+                </div>
+                <div class="class-category" style="background-image: url('omni-bg.jpg');">
+                    <h3>Omni</h3>
+                    <ul>
+                        <li><a href="omni-class-1.html">Omni Class 1</a></li>
+                        <li><a href="omni-class-2.html">Omni Class 2</a></li>
+                    </ul>
+                </div>
+                <div class="class-category" style="background-image: url('logo.png');">
+                    <h3>CRT</h3>
+                    <ul>
+                        <li><a href="crt-class-1.html">CRT Class 1</a></li>
+                        <li><a href="crt-class-2.html">CRT Class 2</a></li>
+                    </ul>
+                </div>
+                <div class="class-category" style="background-image: url('other-bg.jpg');">
+                    <h3>Other</h3>
+                    <ul>
+                        <li><a href="other-class-1.html">Other Class 1</a></li>
+                        <li><a href="other-class-2.html">Other Class 2</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Get in touch for more information.</p>
+            <a href="https://www.crt-services.com/contact/" class="button">Contact Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CRT Services. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="trainingModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Available Dates for <span id="modalTrainingName"></span></h2>
+            <div id="calendar-container">
+                <iframe id="google-calendar-iframe" src="" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+    </div>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const mainNav = document.querySelector('.main-nav');
+    
+        menuBtn.addEventListener('click', () => {
+            mainNav.style.display = mainNav.style.display === 'none' ? 'flex' : 'none';
+        });
+    </script>
+</body>
+</html>
