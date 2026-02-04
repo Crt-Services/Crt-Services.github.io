@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRT Measurement Training</title>
-    <link rel="icon" type="image/png" href="crt-logo-owl.png">
-    <link rel="stylesheet" href="style.css">
+    <title>Modern Gas Certification</title>
+    <link rel="stylesheet" href="style_v2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -14,25 +13,25 @@
     <header>
         <div class="container">
             <div class="logo">
-                <a href="index.html">
+                <a href="index_v2.html">
                     <img src="logo.png" alt="Your Company Logo">
                 </a>
             </div>
             <button class="menu-btn">&#9776;</button>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index_v2.html">Home</a></li>
                     <li class="dropdown">
-                        <a href="training1.html">Flow-x</a>
+                        <a href="training1_v2.html">Flow-x</a>
                     </li>
                     <li class="dropdown">
-                        <a href="training2.html">Omni</a>
+                        <a href="training2_v2.html">Omni</a>
+                    <!--<li class="dropdown">
+                        <a href="training3_v2.html">CRT</a>
                     </li>
+                    -->
                     <li class="dropdown">
-                        <a href="training3.html">CRT</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="training4.html">Other</a>
+                        <a href="training4_v2.html">Other</a>
                     </li>
                 </ul>
             </nav>
@@ -40,8 +39,8 @@
     </header>
     <section class="hero" style="background-image: url('photo-1580582932707-520aed937b7b.jpg');">
         <div class="container">
-            <h1>CRT Measurement Training</h1>
-            <p>Your trusted partner for measurement training.</p>
+            <h1>Expert Gas Certification Services</h1>
+            <p>Your trusted partner for all gas certification needs.</p>
         </div>
     </section>
 
@@ -49,26 +48,19 @@
         <div class="container">
             <h2>Our Trainings</h2>
             <div class="classes-container">
-                <div class="class-category" style="background-image: url('flow-x-web.jpg');">
-                    <a href="training1.html">
-                        <h3>Flow-x</h3>
-                    </a>
-                </div>
-                <div class="class-category" style="background-image: url('omnicomputer2.jpg');">
-                    <a href="training2.html">
-                        <h3>Omni</h3>
-                    </a>
-                </div>
-                <div class="class-category" style="background-image: url('logo.png');">
-                    <a href="training3.html">
-                        <h3>CRT</h3>  
-                    </a>
-                </div>
-                <div class="class-category" style="background-image: url('other.jpg');">
-                    <a href="training4.html">
-                        <h3>Other</h3>
-                    </a>
-                </div>
+                <a href="training1_v2.html" class="class-category" style="background-image: url(flowximg.png)">
+                    <h3>Flow-x</h3>
+                </a>
+                <a href="training2_v2.html" class="class-category" style="background-image: url(omnilogo.png)" >
+                    <h3>Omni</h3>
+                </a>
+                <!--<a href="training3_v2.html" class="class-category" style="background-image: >
+                    <h3>CRT</h3>  
+                </a>
+                -->
+                <a href="training4_v2.html" class="class-category" style="background-image: url(ROC8000.png);">
+                    <h3>Other</h3>
+                </a>
             </div>
         </div>
     </section>
@@ -83,26 +75,6 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 CRT Services. All rights reserved.</p>
+            <p>&copy; 2026 CRT Services. All rights reserved.</p>
         </div>
     </footer>
-
-    <div id="trainingModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Available Dates for <span id="modalTrainingName"></span></h2>
-            <div id="calendar-container">
-                <iframe id="google-calendar-iframe" src="" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-            </div>
-        </div>
-    </div>
-    <script>
-        const menuBtn = document.querySelector('.menu-btn');
-        const mainNav = document.querySelector('.main-nav');
-    
-        menuBtn.addEventListener('click', () => {
-            mainNav.style.display = mainNav.style.display === 'none' ? 'flex' : 'none';
-        });
-    </script>
-</body>
-</html>
