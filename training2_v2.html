@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMNI Series Training</title>
+    <link rel="stylesheet" href="style_v2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index_v2.html">
+                    <img src="logo.png" alt="Your Company Logo">
+                </a>
+            </div>
+            <button class="menu-btn">&#9776;</button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index_v2.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="training1_v2.html">Flow-x</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="training2_v2.html">Omni</a>
+                     <!--<li class="dropdown">
+                        <a href="training3_v2.html">CRT</a>
+                    </li>
+                    -->
+                    </li>
+                    <li class="dropdown">
+                        <a href="training4_v2.html">Other</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="training-title">
+        <div class="training-title-content">
+            <h1>OMNI Series</h1>
+            <div class="training-title-row">
+                <a href="#Operator/Technician-Training">Operator/Technician Training</a>
+                <a href="#Advanced-Technician-Training">Advanced Training</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="training-details">
+        <div class="container">
+            <h2 id="Operator/Technician-Training">OMNI Operator/Technician Training</h2>
+            <h3>Details:</h3>
+            <p>
+                <strong>Instructor:</strong> Isaac Perez<br>
+                Comprehensive training for operators and technicians on the OMNI 3000/6000 systems.
+            </p>
+            <p><strong>Course Topics:</strong></p>
+            <ul>
+                <li>OMNI 3000 vs 6000 Hardware</li>
+                <li>Batch Control, Viewing & Acknowledging Alarms</li>
+                <li>Configuration I/O Channels</li>
+                <li>Wiring Various Devices</li>
+                <li>OMNICOM Software</li>
+                <li>Basic & Global Configuration Settings</li>
+            </ul>
+            
+            <h3>Dates and Location:</h3>
+            <p>
+                <strong>Location:</strong> CRT Training Center - Humble, TX (5 min/10 max)
+            </p>
+            <p>
+                March 24-26
+            </p>
+            <div class="image-container">
+                <img src="IMG_8077.jpeg" alt="Omni Training Image">
+            </div>
+        
+            <h3>Cost:</h3>
+            <p>
+                $1,500 Per Person
+            </p>
+            <a href="https://app.smartsheet.com/b/form/67c3056cdd93457ba7c9b2e59a25c9d4" class="button" target="_blank">Register Now</a>
+        </div>
+    </main>
+
+    <main class="training-details">
+        <div class="container">
+            <h2 id="Advanced-Technician-Training">OMNI 3000/6000 Advanced Training</h2>
+            <h3>Details:</h3>
+            <p>
+                <strong>Instructor:</strong> Isaac Perez<br>
+                Advanced instruction for experienced users.
+            </p>
+            <p><strong>Course Topics:</strong></p>
+            <ul>
+                <li>Advanced Configuration</li>
+                <li>Understanding OMNI Modbus Registers</li>
+                <li>Setting up PID</li>
+                <li>Customer User Displays</li>
+                <li>Programming Variable and Boolean Statements</li>
+            </ul>
+
+            <h3>Dates and Location:</h3>
+            <p>
+                <strong>Location:</strong> CRT Training Center - Humble, TX (5 min/10 max)
+            </p>
+            <p>
+                 November 10-11
+            </p>  
+            <div class="image-container">
+                <img src="IMG_8077.jpeg" alt="Omni Advanced Training Image">
+            </div>
+            
+            <h3>Cost:</h3>
+            <p>
+                $1,750 per participant
+            </p>
+            <a href="https://app.smartsheet.com/b/form/67c3056cdd93457ba7c9b2e59a25c9d4" class="button" target="_blank">Register Now</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 CRT Services. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const mainNav = document.querySelector('.main-nav');
+    
+        menuBtn.addEventListener('click', () => {
+            mainNav.style.display = mainNav.style.display === 'none' ? 'flex' : 'none';
+        });
+
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+</body>
+</html>
